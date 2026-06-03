@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CYBORG-X 2077 — The Future Is Cybernetic</title>
+<meta name="description" content="CYBORG-X is the neural mesh protocol fusing AI cognition, quantum security, and human augmentation into one post-organic civilization." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" class="scanlines">
+  <div class="loader-rings">
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+    <div class="ring ring-3"></div>
+    <div class="loader-percent" id="loader-pct">0%</div>
+  </div>
+  <div class="loader-label">INITIALIZING NEURAL CORE</div>
+  <div class="loader-bar-wrap">
+    <div class="loader-bar"></div>
+  </div>
+  <div class="loader-sub">CYBORG-X // BOOT SEQUENCE v2.077</div>
+</div>
+
+<!-- MATRIX RAIN -->
+<canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+<!-- MOUSE GLOW -->
+<div id="mouse-glow" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="cyber-nav">
+  <div class="nav-inner glass-panel">
+    <a href="#" class="nav-logo">CYBORG-X</a>
+    <div class="nav-links">
+      <a href="#features">FEATURES</a>
+      <a href="#about">EVOLUTION</a>
+      <a href="#pricing">PRICING</a>
+    </div>
+    <button class="btn-jack">JACK IN</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-floor">
+    <div class="hero-grid-floor-inner cyber-grid"></div>
+  </div>
+  <div class="glow-blob blob-cyan"></div>
+  <div class="glow-blob blob-magenta"></div>
+  <div class="glow-blob blob-center"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge glass-panel">
+        <div class="hero-badge-dot"></div>
+        <span class="hero-badge-text">CYBORG-X // 2077 PROTOCOL v4.2 LIVE</span>
+      </div>
+
+      <h1 class="hero-h1">
+        <span class="line1">THE FUTURE</span>
+        <span class="line2">IS CYBERNETIC</span>
+      </h1>
+
+      <p class="hero-desc">
+        A neural mesh fusing AI cognition, quantum security, and human augmentation into a single
+        post-organic protocol. Sub-millisecond reflex. Cortex-grade encryption. One civilization, one signal.
+      </p>
+
+      <div class="hero-btns">
+        <button class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          ENTER THE FUTURE
+        </button>
+        <button class="btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg>
+          WATCH DEMO
+        </button>
+      </div>
+
+      <div class="hero-stats">
+        <div><span>10M+</span> NODES</div>
+        <div class="s2"><span>2ms</span> LATENCY</div>
+        <div class="s3"><span>99.99%</span> UPTIME</div>
+      </div>
+    </div>
+
+    <!-- CSS 3D Scene -->
+    <div class="hero-scene">
+      <div class="hud-rings">
+        <div class="hud-ring hud-ring-1"></div>
+        <div class="hud-ring hud-ring-2"></div>
+        <div class="hud-ring hud-ring-3"></div>
+      </div>
+
+      <!-- Corner brackets -->
+      <div class="hud-bracket tl"></div>
+      <div class="hud-bracket tr"></div>
+      <div class="hud-bracket bl"></div>
+      <div class="hud-bracket br"></div>
+
+      <!-- Torus rings -->
+      <div class="torus-wrap torus-1" style="position:absolute;"><div class="torus"></div></div>
+      <div class="torus-wrap torus-2" style="position:absolute;"><div class="torus"></div></div>
+      <div class="torus-wrap torus-3" style="position:absolute;"><div class="torus"></div></div>
+
+      <!-- Cyborg body -->
+      <div class="cyborg-3d">
+        <div class="cyborg-wireframe"></div>
+        <div class="cyborg-core"></div>
+        <!-- Particles -->
+        <div class="particle" style="width:6px;height:6px;background:oklch(0.85 0.22 210);box-shadow:0 0 8px oklch(0.85 0.22 210);top:10px;left:40px;animation-duration:4s;animation-delay:0s;"></div>
+        <div class="particle" style="width:4px;height:4px;background:oklch(0.7 0.3 335);box-shadow:0 0 6px oklch(0.7 0.3 335);top:30px;right:20px;animation-duration:5s;animation-delay:0.5s;"></div>
+        <div class="particle" style="width:5px;height:5px;background:oklch(0.85 0.22 210);box-shadow:0 0 8px oklch(0.85 0.22 210);bottom:20px;left:20px;animation-duration:3.5s;animation-delay:1s;"></div>
+        <div class="particle" style="width:4px;height:4px;background:oklch(0.7 0.3 335);box-shadow:0 0 6px oklch(0.7 0.3 335);bottom:30px;right:30px;animation-duration:4.5s;animation-delay:0.3s;"></div>
+        <div class="particle" style="width:3px;height:3px;background:oklch(0.65 0.3 295);box-shadow:0 0 5px oklch(0.65 0.3 295);top:50%;left:5px;animation-duration:6s;animation-delay:0.7s;"></div>
+        <div class="particle" style="width:5px;height:5px;background:oklch(0.85 0.22 210);box-shadow:0 0 8px oklch(0.85 0.22 210);top:50%;right:5px;animation-duration:4.2s;animation-delay:1.2s;"></div>
+      </div>
+
+      <div class="hud-stream-label">CYBORG-X.MODEL_77 :: STREAM ACTIVE</div>
+      <div class="hud-rec">◉ REC</div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">↓ SCROLL TO DECRYPT</div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="max-w-7xl" style="padding:0 1.5rem">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">// SYSTEM_MODULES</div>
+      <h2 class="section-title">Capabilities of CYBORG-X</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card glass-panel reveal" style="transition-delay:0s">
+        <div class="feature-icon cyan">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714a2.25 2.25 0 001.357 2.059l.096.04a24.37 24.37 0 003.916 1.046c.066.013.13.028.196.044M9.75 3.104C8.9 3.198 8.09 3.383 7.35 3.65M14.25 3.104c.83.094 1.643.279 2.375.546M19.5 14.5l-4.091-4.091A2.25 2.25 0 0114.25 8.75V3.104M19.5 14.5c.378.378.73.79 1.045 1.23"/></svg>
+        </div>
+        <h3 class="feature-title">Neural Intelligence</h3>
+        <p class="feature-desc">Self-evolving cognition cores process petabytes of thought in milliseconds.</p>
+        <div class="feature-arrow">ACCESS MODULE <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div>
+      </div>
+      <div class="feature-card glass-panel reveal" style="transition-delay:0.08s">
+        <div class="feature-icon magenta">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+        </div>
+        <h3 class="feature-title">Quantum Security</h3>
+        <p class="feature-desc">Post-quantum encrypted neural pathways. Unbreachable by design.</p>
+        <div class="feature-arrow">ACCESS MODULE <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div>
+      </div>
+      <div class="feature-card glass-panel reveal" style="transition-delay:0.16s">
+        <div class="feature-icon purple">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/></svg>
+        </div>
+        <h3 class="feature-title">Cybernetic Augmentation</h3>
+        <p class="feature-desc">Modular implants that fuse seamlessly with organic tissue and reflex.</p>
+        <div class="feature-arrow">ACCESS MODULE <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div>
+      </div>
+      <div class="feature-card glass-panel reveal" style="transition-delay:0.24s">
+        <div class="feature-icon cyan">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <h3 class="feature-title">AI Decision Core</h3>
+        <p class="feature-desc">Predictive engines that compute thousands of futures per second.</p>
+        <div class="feature-arrow">ACCESS MODULE <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div>
+      </div>
+      <div class="feature-card glass-panel reveal" style="transition-delay:0.32s">
+        <div class="feature-icon magenta">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"/></svg>
+        </div>
+        <h3 class="feature-title">Autonomous Learning</h3>
+        <p class="feature-desc">Closed-loop adaptation. Every interaction sharpens the model.</p>
+        <div class="feature-arrow">ACCESS MODULE <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div>
+      </div>
+      <div class="feature-card glass-panel reveal" style="transition-delay:0.4s">
+        <div class="feature-icon purple">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="feature-title">Neural Connectivity</h3>
+        <p class="feature-desc">Mesh-linked minds across continents over a sovereign cyber-fabric.</p>
+        <div class="feature-arrow">ACCESS MODULE <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="max-w-7xl" style="padding:0 1.5rem">
+    <div class="stats-inner glass-panel">
+      <div class="stats-grid-bg cyber-grid"></div>
+      <div class="stats-grid">
+        <div class="reveal">
+          <div class="stat-value" data-target="10" data-suffix="M+" data-decimals="0">0M+</div>
+          <div class="stat-label">Neural Connections</div>
+        </div>
+        <div class="reveal" style="transition-delay:0.1s">
+          <div class="stat-value" data-target="99.99" data-suffix="%" data-decimals="2">0%</div>
+          <div class="stat-label">Security Uptime</div>
+        </div>
+        <div class="reveal" style="transition-delay:0.2s">
+          <div class="stat-value" data-target="5" data-suffix="K+" data-decimals="0">0K+</div>
+          <div class="stat-label">AI Nodes</div>
+        </div>
+        <div class="reveal" style="transition-delay:0.3s">
+          <div class="stat-value" data-target="120" data-suffix="+" data-decimals="0">0+</div>
+          <div class="stat-label">Countries Linked</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="about">
+  <div class="max-w-5xl" style="padding:0 1.5rem">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">// EVOLUTION_LOG</div>
+      <h2 class="section-title">Five Decades to Singularity</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <div class="timeline-item reveal-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-panel">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-title">AI Revolution</div>
+          <p class="timeline-desc">General intelligence breaks the Turing barrier. Cognitive labor enters fluid abundance.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-panel">
+          <div class="timeline-year">2035</div>
+          <div class="timeline-title">Human Augmentation</div>
+          <p class="timeline-desc">First-generation cybernetic implants reach mass adoption across 40 nations.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-panel">
+          <div class="timeline-year">2050</div>
+          <div class="timeline-title">Neural Integration</div>
+          <p class="timeline-desc">Direct cortex-to-cloud streaming becomes the dominant interface paradigm.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-panel">
+          <div class="timeline-year">2077</div>
+          <div class="timeline-title">CYBORG-X</div>
+          <p class="timeline-desc">The post-human protocol. One mesh. Infinite minds. Zero latency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="max-w-7xl" style="padding:0 1.5rem">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">// FIELD_REPORTS</div>
+      <h2 class="section-title">Signals From The Mesh</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card glass-panel reveal" style="transition-delay:0s">
+        <div class="testi-top-line"></div>
+        <div class="testi-bottom-line"></div>
+        <div class="testi-id">// TRANSMISSION_001</div>
+        <p class="testi-quote">"After integration, my decision latency dropped to under 2ms. There is no going back."</p>
+        <div class="testi-author">
+          <div class="testi-avatar"></div>
+          <div>
+            <div class="testi-name">K. Mizuno</div>
+            <div class="testi-role">Neural Architect, Neo-Kyoto</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card glass-panel reveal" style="transition-delay:0.1s">
+        <div class="testi-top-line"></div>
+        <div class="testi-bottom-line"></div>
+        <div class="testi-id">// TRANSMISSION_002</div>
+        <p class="testi-quote">"We deployed CYBORG-X across our entire dispatch grid. Crime resolution is up 412%."</p>
+        <div class="testi-author">
+          <div class="testi-avatar"></div>
+          <div>
+            <div class="testi-name">Cmdr. R. Vega</div>
+            <div class="testi-role">Night City Authority</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card glass-panel reveal" style="transition-delay:0.2s">
+        <div class="testi-top-line"></div>
+        <div class="testi-bottom-line"></div>
+        <div class="testi-id">// TRANSMISSION_003</div>
+        <p class="testi-quote">"The mesh feels less like a network and more like a sixth sense. It's beautiful."</p>
+        <div class="testi-author">
+          <div class="testi-avatar"></div>
+          <div>
+            <div class="testi-name">Dr. A. Patel</div>
+            <div class="testi-role">Cognitive Surgeon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="max-w-7xl" style="padding:0 1.5rem">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">// ACCESS_TIERS</div>
+      <h2 class="section-title">Choose Your Augmentation</h2>
+    </div>
+    <div class="pricing-grid">
+      <!-- Tier 01 -->
+      <div class="pricing-card glass-panel reveal" style="transition-delay:0s">
+        <div class="pricing-tier">// TIER_01</div>
+        <h3 class="pricing-name cyan">Basic Neural</h3>
+        <p class="pricing-tagline">Entry-grade cognitive uplink.</p>
+        <div class="pricing-price">
+          <span class="pricing-amount">$490</span>
+          <span class="pricing-cycle">/ cycle</span>
+        </div>
+        <ul class="pricing-features">
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Single-mind license</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>12ms response latency</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>256-bit neural encryption</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Community mesh access</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Standard implant kit</span></li>
+        </ul>
+        <button class="btn-pricing outline">JACK IN →</button>
+      </div>
+
+      <!-- Tier 02 (featured) -->
+      <div class="pricing-card glass-panel featured reveal" style="transition-delay:0.1s">
+        <div class="pricing-badge">RECOMMENDED</div>
+        <div class="pricing-tier">// TIER_02</div>
+        <h3 class="pricing-name purple">Advanced Cyborg</h3>
+        <p class="pricing-tagline">For augmented operators.</p>
+        <div class="pricing-price">
+          <span class="pricing-amount">$1,290</span>
+          <span class="pricing-cycle">/ cycle</span>
+        </div>
+        <ul class="pricing-features">
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>3-mind cluster</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>2ms response latency</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Quantum-grade encryption</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Priority mesh routing</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Reflex-tier implant kit</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>24/7 neural support</span></li>
+        </ul>
+        <button class="btn-pricing filled">JACK IN →</button>
+      </div>
+
+      <!-- Tier 03 -->
+      <div class="pricing-card glass-panel reveal" style="transition-delay:0.2s">
+        <div class="pricing-tier">// TIER_03</div>
+        <h3 class="pricing-name magenta">Quantum Elite</h3>
+        <p class="pricing-tagline">Post-human protocol access.</p>
+        <div class="pricing-price">
+          <span class="pricing-amount">$4,990</span>
+          <span class="pricing-cycle">/ cycle</span>
+        </div>
+        <ul class="pricing-features">
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Unlimited mesh nodes</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Sub-ms latency</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Post-quantum lattice</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Sovereign routing channel</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Bespoke cybernetic forge</span></li>
+          <li class="pricing-feature"><span class="pricing-check">✓</span><span>Dedicated neural architect</span></li>
+        </ul>
+        <button class="btn-pricing outline">JACK IN →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">CYBORG-X</div>
+      <p class="footer-desc">The neural protocol powering tomorrow's augmented civilization. Built for the singularity.</p>
+      <div class="footer-socials">
+        <!-- Twitter -->
+        <a href="#" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <!-- Github -->
+        <a href="#" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <!-- YouTube -->
+        <a href="#" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-nav-title">// NAVIGATE</div>
+      <ul class="footer-nav">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Manifesto</a></li>
+        <li><a href="#">Neural Lab</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-email-label">// SUBSCRIBE_TO_MESH</div>
+      <p class="footer-email-desc">Receive transmissions from the edge of cognition.</p>
+      <form class="footer-form" onsubmit="return false;">
+        <input type="email" class="footer-input" placeholder="neural.id@mesh.net" />
+        <button type="submit" class="footer-submit">LINK</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div>© 2077 CYBORG-X PROTOCOL // ALL NEURAL RIGHTS RESERVED</div>
+    <div>STATUS: <span style="color:var(--primary)">MESH ONLINE</span> · LATENCY 1.2ms</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
